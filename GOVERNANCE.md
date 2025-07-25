@@ -53,9 +53,34 @@ The Oversight Committee is responsible for the following duties:
 * Overseeing the resolution and disclosure of security issues
 * Managing financial decisions related to the project
 
-The Oversight Committee will also consists of a two selected Chair members who will share committee facilitation responsibilities and call meetings. These meetings can be public or private at the discretion of the Oversight Committee.
+#### Stepping Down and the Emeritus Process
+
+It is inevitable that people's focuses will change over time. Oversight Committee members may resign from their role at any time. If a member needs to step down, they should inform one of the Chairs, ideally by opening a pull request to remove themselves from the `MAINTAINERS.md` file.
+No vote is required for a member to step down, and any member can approve the change.
+
+Members who step down in good standing become **Emeritus Oversight Committee Members**. Emeritus members do not retain elevated privileges or binding votes but are encouraged to remain involved in the community.
+
+Emeritus members are welcome to regain active status by being re-elected in a future election cycle.
+
+#### Active Member Status
+
+To be considered an _active_ Oversight Committee member, individuals are expected to be consistently engaged in the duties of the committee. Active participation includes, but is not limited to:
+
+* Regularly attending Oversight Committee meetings.
+* Actively participating in committee discussions and voting on proposals.
+* Helping to maintain the mission, vision, and scope of the project.
+* Mentoring other contributors and helping to grow the community.
+
+The process for moving an inactive member to **Emeritus** status is as follows:
+
+* Grace Period: If a member is unable to maintain active participation for a consecutive period of **3 months**, a Committee Chair will reach out privately to check in with them.
+* Vote: If the member remains inactive or cannot be reached, a vote may be called. This requires a simple majority vote from the other active members.
+* Offboarding: If the vote passes, a pull request will be opened to remove the individual from the `MAINTAINERS.md` file. Following the merge of the pull request, their privileged access to resources will be revoked. They will be considered an **Emeritus Oversight Committee Members** and are welcome to become active again by following the standard nomination process.
+* In such cases, the vacancy will be filled according to the procedures outlined in this document. 
 
 #### Oversight Committee Chairs
+
+The Oversight Committee will also consists of a two selected Chair members who will share committee facilitation responsibilities and call meetings. These meetings will be held publicly, except in special circumstances. The Oversight Committee may hold private meetings to discuss sensitive topics, such as security vulnerabilities or Code of Conduct violations.
 
 The Chairs are expected to perform a variety of functions to support Oversight Committee activities:
 
@@ -67,7 +92,31 @@ The Chairs are expected to perform a variety of functions to support Oversight C
 
 #### Oversight Committee Succession Procedures
 
-This process is currently being determined by the bootstrap Oversight Committee.
+The OSCAL Compass project will hold yearly elections to vote for new members of the Oversight Committee.
+
+##### Election Process
+
+The election process is as follows:
+
+1.  **Voter Eligibility**: All active community Members, Reviewers, and Maintainers (as defined in `MEMBERSHIP.md`) at the time of the election are eligible to vote.
+2.  **Call for Nominations**: Two months before the election, a call for nominations will be sent out to the OSCAL Compass community.
+3.  **Nomination Period**: Community members will have one month to nominate candidates for the Oversight Committee. Self-nominations are permitted.
+4.  **Candidate Statements**: Each candidate will be asked to provide a statement of interest and qualifications.
+5.  **Voting Period**: A two-week voting period will be held.
+6.  **Results**: The results of the election will be announced within one week of the close of voting.
+7.  **Tie-Breaking**: In the event of a tie for a seat on the Oversight Committee, the winner will be determined using the Schulze method of ranked-choice voting.
+
+##### Term Length
+
+Members of the Oversight Committee will serve a two-year term.
+
+##### Company Affiliation
+
+To ensure diversity, no more than two members employed by the same company may serve on the Oversight Committee simultaneously. If the results of an election would cause this limit to be exceeded, the candidate(s) from the over-represented company with the lowest vote counts will be disqualified, and the seat(s) will be filled by the next highest-voted candidates who do not violate the company representation limit.
+
+##### Vacancies
+
+If a seat on the Oversight Committee becomes vacant, the committee may appoint a replacement to serve until the next election.
 
 ## Decision Making Process
 
@@ -81,7 +130,7 @@ In the event that consensus cannot be reached, a Maintainer can call for a vote 
 
 ### Explicit Voting
 
-The secondary decision-making process is done by explicit voting.
+The secondary decision-making process is done by explicit voting. In any vote, a tie is considered a failure to achieve the required majority and the motion does not pass.
 
 #### Process
 
